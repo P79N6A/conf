@@ -1,1 +1,2 @@
-# Jefung personal configure file in linux platform
+# Jefung personal configure file in linux or windows platform
+
