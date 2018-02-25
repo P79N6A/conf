@@ -10,6 +10,7 @@ alias gd="git diff"
 alias gc="git commit -m"
 alias ga="git add"
 alias g="git"
+alias gp="git push"
 
 ###
 
