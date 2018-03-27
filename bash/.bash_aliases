@@ -13,4 +13,4 @@ alias g="git"
 alias gp="git push"
 
 ###
-
+alias tmux='tmux -2'

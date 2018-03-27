@@ -127,6 +127,7 @@ fi
 
 # modify the terminal prompt notation
 export PS1="[\u:\W]\$"
+export PATH=$PATH:/opt/usr/bin:/home/jefung/repos/script/bash
 
 #xmodmap ~/.xmodmaprc
 

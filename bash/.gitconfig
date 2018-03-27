@@ -1,0 +1,10 @@
+[color]
+	status = true
+	diff = true
+	branch = true
+	interactive = true
+
+[user]
+	name = Jefung
+	email = jefung865424525@gmail.com
+
