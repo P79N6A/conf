@@ -14,3 +14,6 @@ alias gp="git push"
 
 ###
 alias tmux='tmux -2'
+
+# use vimx with `-clipboard` fearure
+alias vim="vimx"
