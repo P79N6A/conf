@@ -113,8 +113,7 @@ if [ -f ~/.bash_export ]; then
 	. ~/.bash_export
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# enable programmable completion features (you don't need to enable this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
@@ -127,7 +126,9 @@ fi
 
 # modify the terminal prompt notation
 export PS1="[\u:\W]\$"
-export PATH=$PATH:/opt/usr/bin:/home/jefung/repos/script/bash
+export PATH=$PATH:/opt/usr/bin:/home/jefung/repos/script/bash:/opt/llvm-5.0.1/bin/
 
-#xmodmap ~/.xmodmaprc
-
+# modify key: CapsLK -> Esc
+setxkbmap -option caps:escape
+# modify key: right Alt -> right Ctrl
+setxkbmap -option ctrl:ralt_rctrl

@@ -17,3 +17,7 @@ alias tmux='tmux -2'
 
 # use vimx with `-clipboard` fearure
 alias vim="vimx"
+alias python="python3.6"
+
+# use user script
+alias rm=trash.sh
