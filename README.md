@@ -1,5 +1,6 @@
 # Jefung personal configure file in linux
 ## dir tree
+
 * bash: config file (like `.bashrc`) in user home directory `~`
 	* .bash_aliases: bash command alias
 	* .bash_export: bash export variable
