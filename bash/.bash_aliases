@@ -23,7 +23,7 @@ alias v="vimx"
 alias python="python2.6"
 
 # use user script
-alias rm=trash.sh
+alias rm=remove.py
 # alias sudo='sudo -i env PATH=$PATH'
 
 # add link to chrome app shortcut: weixin
