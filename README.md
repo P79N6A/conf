@@ -10,4 +10,4 @@
 * common:
 	* font.md: the font that I usually use in terminal
 * ide:
-	* pycharm.jar: pycharm config that you can export or import from pycharm. (across-platform)
+	* JetBrains_setting.jar: JetBranis products(like pycharm, clion) config file that can be imported (across-platform)
