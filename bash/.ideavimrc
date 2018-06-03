@@ -1,0 +1,22 @@
+nnoremap <Tab> >>_
+vnoremap <Tab> >gv
+
+
+" 窗口移动
+" move window
+map <C-j> <C-W>j
+map <C-h> <C-W>h
+map <C-k> <C-W>k
+map <C-l> <C-W>l
+
+" 自定义大写H（行首）L（行末）
+" custom upper H -> top of line, L -> end of line
+" custom upper K -> top of text, J -> end of text
+map H ^
+map L $
+
+nnoremap zC :action CollapseRegionRecursively<CR>
+nnoremap zO :action ExpandRegionRecursively<CR>
+
+" nnoremap m1 :action ToggleBookmark0<CR>
+" nnoremap '1 : action GotoBookmark0<CR>
