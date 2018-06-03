@@ -24,6 +24,7 @@ alias python="python2.6"
 
 # use user script
 alias rm=remove.py
+alias yd=youdao.py
 # alias sudo='sudo -i env PATH=$PATH'
 
 # add link to chrome app shortcut: weixin

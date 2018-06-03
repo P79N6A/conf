@@ -138,5 +138,5 @@ if command -v tmux>/dev/null; then
 		[[ ! $TERM =~ screen ]] && [ -z $TMUX ] && tmux
 	fi
 fi
-# privoxy --user privoxy /etc/privoxy/config
+privoxy --user privoxy /etc/privoxy/config
 export MANPAGER="vimx -c MANPAGER -"
