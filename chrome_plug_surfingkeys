@@ -1,0 +1,31 @@
+map("<Alt-j>", "S");
+
+// add search engine
+mapkey('oc', 'csdn博客', function() {
+    Front.openOmnibar({type: "SearchEngine", extra: "c"});
+});
+addSearchAliasX('c', 'csdn', 'https://so.csdn.net/so/search/s.do?t=blog&o=&s=&l=&q=', 's', 'http://suggestion.baidu.com/su?cb=&wd=', function(response) {
+    var res = response.text.match(/,s:\[("[^\]]+")]}/);
+    return res ? res[1].replace(/"/g, '').split(",") : [];
+});
+
+mapkey('oj', '简书', function() {
+    Front.openOmnibar({type: "SearchEngine", extra: "j"});
+});
+addSearchAliasX('j', '简书', 'https://www.google.com/search?q=site:www.jianshu.com+', 's', 'http://suggestion.baidu.com/su?cb=&wd=', function(response) {
+    var res = response.text.match(/,s:\[("[^\]]+")]}/);
+    return res ? res[1].replace(/"/g, '').split(",") : [];
+});
+
+mapkey('ok', 'github搜索', function() {
+    Front.openOmnibar({type: "SearchEngine", extra: "k"});
+});
+
+addSearchAliasX('k', 'github', 'https://github.com/search?type=Repositories&q=', 's');
+
+mapkey('<Space>', 'Choose a tab with omnibar', function() {
+    Front.openOmnibar({type: "Tabs"});
+});
+
+unmap('<Ctrl-j>')
+unmap('<Ctrl-h>')
