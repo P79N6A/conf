@@ -16,6 +16,19 @@
 # 	${1}: dirname
 #	${2}: filename
 # if dirname/filename is exists, move it to dirname/filename.backup
+
+declare -A file_map
+
+homedir="$(echo ~)"
+file_map=( 
+		[.bash_aliases]=${homedir}
+		[.bash_export]=${homedir} 
+		# [.bashrc]=${homedir}
+		[.zshrc]=${homedir}
+		[.gitconfig]=${homedir}
+		[.tmux.conf]=${homedir}
+	)
+	
 function fileExists(){
 	if [ -d $1 ];then
 		if [ -f $1/$2 ];then
@@ -57,16 +70,7 @@ for key in $(echo ${!color_map[*]})
 echo ${1}
 }
 
-declare -A file_map
 
-homedir="$(echo ~)"
-file_map=( 
-		[.bash_aliases]=${homedir}
-		[.bash_export]=${homedir} 
-		[.bashrc]=${homedir}
-		[.gitconfig]=${homedir}
-		[.tmux.conf]=${homedir}
-	)
 
 # if no argument, set soft link for all files in file_map
 if [ $# == 0 ];then
