@@ -126,7 +126,6 @@ fi
 
 # modify the terminal prompt notation
 export PS1="[\u:\W]\$"
-export PATH=$PATH:/opt/usr/bin:/home/jefung/repos/script/bash:/opt/llvm-5.0.1/bin/:/home/jefung/repos/script/py
 
 # modify key: CapsLK -> Esc
 setxkbmap -option caps:escape
