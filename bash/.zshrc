@@ -113,3 +113,6 @@ if [ -f ~/.bash_aliases  ]; then
         . ~/.bash_aliases
 fi
 export MANPAGER="vim -c MANPAGER -"
+cd ~
+export PATH=$PATH:/usr/local/bin
+sudo service  ssh start
