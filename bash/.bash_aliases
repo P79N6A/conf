@@ -1,5 +1,10 @@
-alias h=search_history.sh
+alias ls='ls --color=auto'
 alias la="ll -a"
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias h=search_history.sh
 alias py3=python3
 alias py=python2.7
 alias unzip="unzip -O cp936"
@@ -14,13 +19,7 @@ alias g="git"
 alias gp="git push"
 
 
-# use vimx with `-clipboard` fearure
 alias v="vim"
-
-# use user script
-alias rm=remove.py
-alias yd=youdao.py
-
 alias sd=sudo
 
 which trash-put && alias rm=trash-put

@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/jefung/.oh-my-zsh"
+export ZSH="/home/jefung/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -96,23 +96,7 @@ unsetopt BG_NICE
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-[[ -z "$TMUX" && -n "$USE_TMUX" ]] && {
-    [[ -n "$ATTACH_ONLY" ]] && {
-        tmux a 2>/dev/null || {
-            cd && exec tmux
-        }
-        exit
-    }
 
-    tmux new-window -c "$PWD" 2>/dev/null && exec tmux a
-    exec tmux
-}
-umask 022
-
-if [ -f ~/.bash_aliases  ]; then
-        . ~/.bash_aliases
+if [ -f ~/.bash_init  ]; then
+        . ~/.bash_init
 fi
-export MANPAGER="vim -c MANPAGER -"
-cd ~
-export PATH=$PATH:/usr/local/bin
-sudo service  ssh start

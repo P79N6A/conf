@@ -1,0 +1,26 @@
+[[ -z "$TMUX" && -n "$USE_TMUX" ]] && {
+    [[ -n "$ATTACH_ONLY" ]] && {
+        tmux a 2>/dev/null || {
+            cd && exec tmux
+        }
+        exit
+    }
+
+    tmux new-window -c "$PWD" 2>/dev/null && exec tmux a
+    exec tmux
+}
+umask 022
+
+# load conf files
+if [ -f ~/.bash_aliases  ]; then
+        . ~/.bash_aliases
+fi
+
+if [ -f ~/.bash_export  ]; then
+        . ~/.bash_export
+fi
+
+export MANPAGER="vim -c MANPAGER -"
+cd ~
+
+sudo service  ssh start

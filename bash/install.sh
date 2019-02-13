@@ -1,3 +1,4 @@
+#!/bin/bash
 ############################################
 # File Name: install.sh
 # Program: 
@@ -10,7 +11,6 @@
 # create time :Mon 02 Apr 2018 01:29:18 PM EDT
 #======================================
 
-#!/bin/bash
 
 # args:
 # 	${1}: dirname
@@ -21,6 +21,7 @@ declare -A file_map
 
 homedir="$(echo ~)"
 file_map=( 
+		[.bash_init]=${homedir}
 		[.bash_aliases]=${homedir}
 		[.bash_export]=${homedir} 
 		[.bashrc]=${homedir}

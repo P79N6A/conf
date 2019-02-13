@@ -1,12 +1,5 @@
-# define serve IP  variables
-export srv_tx1=139.199.155.65 
-export srv_tx2=123.207.45.244
-export srv_iusgs=139.199.194.232
-export wxsecret=5b8a6acc103d546b2cfb131557b8b5be
-
 # define some file position, maybe I will make a script to change file path quickly
 export home="/home/jefung"
-
 export nginx_conf="/etc/nginx/conf.d"
 export nginx_err="/var/log/nginx/error.log"
 export nginx_acc="/var/log/nginx/access.log"
