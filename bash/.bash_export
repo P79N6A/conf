@@ -1,3 +1,4 @@
+# comment: 存放export环境变量
 # define some file position, maybe I will make a script to change file path quickly
 export home="/home/jefung"
 export nginx_conf="/etc/nginx/conf.d"

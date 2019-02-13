@@ -1,3 +1,4 @@
+# comment: 存放命令别名
 alias ls='ls --color=auto'
 alias la="ll -a"
 alias grep='grep --color=auto'
