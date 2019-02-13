@@ -22,3 +22,6 @@ alias rm=remove.py
 alias yd=youdao.py
 
 alias sd=sudo
+
+which trash-put && alias rm=trash-put
+which trash-restore && alias restore=trash-restore
