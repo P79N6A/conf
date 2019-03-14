@@ -11,3 +11,19 @@
 
 [push]
 	default = matching
+
+[alias]
+    # 叹号开头表示执行后续的 shell 命令
+    new = "!f() { git fetch && git checkout -b sandbox/`whoami`/`date +%m-%d`/${2:-`date +%H-%M`} origin/${1:-master}; }; f"
+    rvm = "!f() { echo %${1}; git push origin HEAD:refs/for/master%${1}; }; f"
+    rv = "!f() { git push origin HEAD:refs/for/${1:-master}%${2}; }; f"
+    fp = "!f() { git fetch origin refs/changes/$(printf "%02d" $(expr ${1} % 100))/${1}/${2:-1} && git checkout FETCH_HEAD;}; f"
+    cin = commit --amend --no-edit
+    delbranch = "!f() {git branch | grep sandbox | xargs git branch -D; }; f"
+
+    # Jefung's alias
+    ck = checkout
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset - %s %C(yellow)%d%Creset %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+[init]
+	templatedir = /Users/jefung/.gittemplates
