@@ -22,6 +22,3 @@ if [ -f ~/.bash_export  ]; then
 fi
 
 export MANPAGER="vim -c MANPAGER -"
-cd ~
-
-sudo service  ssh start
