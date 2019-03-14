@@ -27,3 +27,6 @@
 
 [init]
 	templatedir = /Users/jefung/.gittemplates
+
+[url "git@code.byted.org:"]
+    insteadOf = https://code.byted.org/
